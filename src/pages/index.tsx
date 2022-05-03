@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
-import { Flex, Input, Button, Stack, FormLabel, FormControl } from '@chakra-ui/react'
+import { Flex, Button, Stack } from '@chakra-ui/react'
+import { Input } from '../components/Input'
 
-const Home: NextPage = () => {
+const SignIn: NextPage = () => {
   return (
     <Flex
       w='100vw'
@@ -20,37 +21,8 @@ const Home: NextPage = () => {
 
       >
         <Stack spacing={4}>
-          <FormControl>
-            <FormLabel htmlFor='email'>E-mail</FormLabel>
-            <Input
-              id='email'
-              name='email'
-              type='email'
-              focusBorderColor='blue.500'
-              bgColor='gray.800'
-              variant='filled'
-              _hover={{
-                bgColor: 'gray.800'
-              }}
-              size='lg'
-            />
-          </FormControl>
-
-          <FormControl>
-            <FormLabel htmlFor='password'>Senha</FormLabel>
-            <Input
-              id='password'
-              name='password'
-              type='password'
-              focusBorderColor='blue.500'
-              bgColor='gray.800'
-              variant='filled'
-              _hover={{
-                bgColor: 'gray.800'
-              }}
-              size='lg'
-            />
-          </FormControl>
+          <Input name='email' type='email' label='E-mail' />
+          <Input name='password' type='password' label='Senha' />
         </Stack>
         <Button type='submit' marginTop={6} colorScheme='blue'>Entrar</Button>
       </Flex>
@@ -58,4 +30,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default SignIn
