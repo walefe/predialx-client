@@ -1,7 +1,7 @@
 ## Predialx
- This is a simple client for the [api](https://github.com/walefe/predialx-api)
+ This is a simple client for this [API](https://github.com/walefe/predialx-api)
  
- ![logo](https://github.com/walefe/predialx-client/predial.png)
+ ![logo](./predial.png)
 ## Getting started
 
 1. Clone this repo using `https://github.com/walefe/predial-client`
